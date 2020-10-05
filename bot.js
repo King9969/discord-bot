@@ -4,12 +4,7 @@ const client = new Discord.Client()
 const balance = []
 
 
-const getquote = () => {
-  const api = require('./quotes.json')
-  let rand = Math.floor(Math.random() * 1600)
-  q = api[rand]
 
-}
 
 client.once("ready", () => {
   console.log("ready")
@@ -22,11 +17,11 @@ client.on('message', message => {
 
   if (message.content.startsWith(`${prefix}dedo`)) {
     let rand = Math.floor(Math.random() * 10000) + 10;
-    const x = rand
+    const ra = rand
 
     balance.push(rand)
 
-    message.channel.send("You got " + "**" + x.toLocaleString() + "**" + " coins for the server")
+    message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for the server")
   }
   else if (message.content.startsWith(`${prefix}bal`)) {
 
@@ -43,10 +38,18 @@ client.on('message', message => {
     message.channel.send("https://ibb.co/DDBpMk3")
 
   }
-  else if (message.content.startsWith(`${prefix}quo`)) {
+  else if (message.content.startsWith(`${prefix}quote`)) {
+    const getquote = () => {
+      const api = require('./quotes.json')
+      let ran = Math.floor(Math.random() * 1600)
+      const q = api[ran]
+      const a = q.text
+      message.channel.send("**" + a + "**")
 
-    getquote()
-    message.channel.send("**" + q.text + "**")
+    }
+    getquote();
+
+
 
   }
   else if (message.content.startsWith(`${prefix}help`)) {
@@ -61,6 +64,7 @@ client.on('message', message => {
   }
 })
 client.login(token)
+
 
 
 
