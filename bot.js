@@ -51,7 +51,7 @@ client.on('message', message => {
   }
   else if (message.content.startsWith(`${prefix}help`)) {
 
-    getquote()
+
     message.channel.send("**" + " r dedo  -- to get free coins " + "**")
     message.channel.send("**" + " r img  -- to get random image " + "**")
     message.channel.send("**" + " r bal  -- show servers balance " + "**")
