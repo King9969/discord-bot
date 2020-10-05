@@ -38,7 +38,7 @@ client.on('message', message => {
     message.channel.send("https://ibb.co/DDBpMk3")
 
   }
-  else if (message.content.startsWith(`${prefix}quote`)) {
+  else if (message.content.startsWith(`${prefix}quo`)) {
     const getquote = () => {
       const api = require('./quotes.json')
       let ran = Math.floor(Math.random() * 1600)
