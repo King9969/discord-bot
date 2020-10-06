@@ -7,8 +7,9 @@ const CharlesLeemon = []
 const pritam = [100000]
 const AKELDAMA = []
 const Climax2147 = []
-const Ganesh_Gaitonde = []
+const JackHeroYO = []
 const NightShade = []
+
 
 let luc = Math.floor(Math.random() * 10) + 1;
 console.log(luc)
@@ -59,8 +60,8 @@ client.on('message', message => {
             message.channel.send("NightShade " + "**" + rand.toLocaleString() + "**")
       NightShade.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-            message.channel.send("Ganesh_Gaitonde " + "**" + rand.toLocaleString() + "**")
-      Ganesh_Gaitonde.push(rand)
+            message.channel.send("JackHeroYO " + "**" + rand.toLocaleString() + "**")
+      JackHeroYO.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
 
 
@@ -549,13 +550,13 @@ client.on('message', message => {
     }
 
   }
-  else if (message.author.username == "Ganesh_Gaitonde") {
+  else if (message.author.username == "JackHeroYO") {
 
     if (message.content.startsWith(`${prefix}dedo`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
       const ra = rand
 
-      Ganesh_Gaitonde.push(rand)
+      JackHeroYO.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
@@ -570,7 +571,7 @@ client.on('message', message => {
       let rand = Math.floor(Math.random() * 100000) + 100;
 
 
-      Ganesh_Gaitonde.push(rand)
+      JackHeroYO.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
@@ -583,7 +584,7 @@ client.on('message', message => {
       let rand = Math.floor(Math.random() * 1000) + 10;
 
 
-      Ganesh_Gaitonde.push(-rand)
+      JackHeroYO.push(-rand)
       message.channel.send("lost " + "**" + rand + "**" + "(pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
 
@@ -592,7 +593,7 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}bal`)) {
 
-      sum = eval(Ganesh_Gaitonde.join('+'))
+      sum = eval(JackHeroYO.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.startsWith(`${prefix}img`)) {
