@@ -46,7 +46,7 @@ client.on('message', message => {
 
 
   let help = () => {
-    message.channel.send(```diff+ "**" + " pls beg  -- to get free coins " + "**" + " \n " + "**" + " pls img  -- to get random image " + "**" + " \n " + "**" + " bet number  -- to guess no between 1 to 10(eg bet 2) " + "**" + " \n " + "**" + " pls quote  -- to show random quote " + "**" + " \n " + "**" + " pls tt  -- to show timetable " + "**" + " \n " + "**" + " pls bal  -- show yours /servers balance " + "**"```)
+    message.channel.send(```css  + " \n "  +"**"+ " pls beg  -- to get free coins " + "**" + " \n " + "**" + " pls img  -- to get random image " + "**" + " \n " + "**" + " bet number  -- to guess no between 1 to 10(eg bet 2) " + "**" + " \n " + "**" + " pls quote  -- to show random quote " + "**" + " \n " + "**" + " pls tt  -- to show timetable " + "**" + " \n " + "**" + " pls bal  -- show yours /servers balance " + "** + " \n " + "```)
 
 
   }
