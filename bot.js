@@ -44,16 +44,16 @@ client.on('message', message => {
       let rand = Math.floor(Math.random() * 100000) + 1500;
 
       message.channel.send("**"+"KING RAINED FREE COINS"+"**")
-      message.channel.send("**"+"CharlesLeemon "+"**"+rand)
+      message.channel.send("CharlesLeemon "+"**"+rand.toLocaleString()+"**")
       CharlesLeemon.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-      message.channel.send("**"+"pritam "+"**"+rand)
+      message.channel.send("pritam "+"**"+rand.toLocaleString()+"**")
       pritam.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-      message.channel.send("**"+"AKELDAMA "+"**"+rand)
+      message.channel.send("AKELDAMA "+"**"+rand.toLocaleString()+"**")
       AKELDAMA.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-      message.channel.send("**"+"Climax2147 "+"**"+rand)
+      message.channel.send("Climax2147 "+"**"+rand.toLocaleString()+"**")
       Climax2147.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
       
