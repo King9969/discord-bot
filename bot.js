@@ -67,7 +67,7 @@ client.on('message', message => {
 
 
       rohit.push(rand)
-      message.channel.send("won" + "**" + rand + "**")
+      message.channel.send("won " + "**" + rand + "**" coins)
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -150,7 +150,7 @@ client.on('message', message => {
 
 
       shauny.push(rand)
-      message.channel.send("won" + "**" + rand + "**")
+      message.channel.send("won " + "**" + rand + "**" coins)
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -233,7 +233,7 @@ client.on('message', message => {
 
 
       CharlesLeemon.push(rand)
-      message.channel.send("won" + "**" + rand + "**")
+      message.channel.send("won " + "**" + rand + "**" coins)
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -316,7 +316,7 @@ client.on('message', message => {
 
 
       pritam.push(rand)
-      message.channel.send("won" + "**" + rand + "**")
+      message.channel.send("won " + "**" + rand + "**" coins)
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -399,7 +399,7 @@ client.on('message', message => {
 
 
       AKELDAMA.push(rand)
-      message.channel.send("won" + "**" + rand + "**")
+      message.channel.send("won " + "**" + rand + "**" coins)
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -565,7 +565,7 @@ client.on('message', message => {
 
 
       Ganesh_Gaitonde.push(rand)
-      message.channel.send("won" + "**" + rand + "**")
+      message.channel.send("won " + "**" + rand + "**" coins)
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
