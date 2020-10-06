@@ -8,7 +8,7 @@ const pritam = [100000]
 const AKELDAMA = []
 const Climax2147 = []
 const Ganesh_Gaitonde = []
-const NightShade =[]
+const NightShade = []
 
 let luc = Math.floor(Math.random() * 10) + 1;
 console.log(luc)
