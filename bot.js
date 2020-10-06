@@ -43,21 +43,21 @@ client.on('message', message => {
     else if (message.content.startsWith(`${prefix}rain`)) {
       let rand = Math.floor(Math.random() * 100000) + 1500;
 
-      message.channel.send("**"+"KING RAINED FREE COINS"+"**")
-      message.channel.send("CharlesLeemon "+"**"+rand.toLocaleString()+"**")
+      message.channel.send("**" + "KING RAINED FREE COINS" + "**")
+      message.channel.send("CharlesLeemon " + "**" + rand.toLocaleString() + "**")
       CharlesLeemon.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-      message.channel.send("pritam "+"**"+rand.toLocaleString()+"**")
+      message.channel.send("pritam " + "**" + rand.toLocaleString() + "**")
       pritam.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-      message.channel.send("AKELDAMA "+"**"+rand.toLocaleString()+"**")
+      message.channel.send("AKELDAMA " + "**" + rand.toLocaleString() + "**")
       AKELDAMA.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-      message.channel.send("Climax2147 "+"**"+rand.toLocaleString()+"**")
+      message.channel.send("Climax2147 " + "**" + rand.toLocaleString() + "**")
       Climax2147.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-      
-      
+
+
 
     }
     else if (message.content.startsWith("bet " + luc)) {
@@ -67,7 +67,7 @@ client.on('message', message => {
 
 
       rohit.push(rand)
-      message.channel.send("won " + "**" + rand + "**" coins)
+      message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -150,7 +150,7 @@ client.on('message', message => {
 
 
       shauny.push(rand)
-      message.channel.send("won " + "**" + rand + "**" coins)
+      message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -206,7 +206,7 @@ client.on('message', message => {
       message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
-       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
+      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
@@ -233,7 +233,7 @@ client.on('message', message => {
 
 
       CharlesLeemon.push(rand)
-      message.channel.send("won " + "**" + rand + "**" coins)
+      message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -289,7 +289,7 @@ client.on('message', message => {
       message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
-       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
+      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
@@ -316,7 +316,7 @@ client.on('message', message => {
 
 
       pritam.push(rand)
-      message.channel.send("won " + "**" + rand + "**" coins)
+      message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -372,7 +372,7 @@ client.on('message', message => {
       message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
-       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
+      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
@@ -399,7 +399,7 @@ client.on('message', message => {
 
 
       AKELDAMA.push(rand)
-      message.channel.send("won " + "**" + rand + "**" coins)
+      message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -455,7 +455,7 @@ client.on('message', message => {
       message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
-       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
+      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
@@ -482,7 +482,7 @@ client.on('message', message => {
 
 
       Climax2147.push(rand)
-      message.channel.send("won" + "**" + rand + "**")
+      message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -538,7 +538,7 @@ client.on('message', message => {
       message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
-       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
+      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
@@ -565,7 +565,7 @@ client.on('message', message => {
 
 
       Ganesh_Gaitonde.push(rand)
-      message.channel.send("won " + "**" + rand + "**" coins)
+      message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
@@ -622,7 +622,7 @@ client.on('message', message => {
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
-       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
+      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
@@ -650,7 +650,7 @@ client.on('message', message => {
 
 
       balance.push(rand)
-      message.channel.send("won" + "**" + rand + "**")
+      message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
 
