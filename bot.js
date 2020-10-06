@@ -43,7 +43,7 @@ client.on('message', message => {
     else if (message.content.startsWith(`${prefix}rain`)) {
       let rand = Math.floor(Math.random() * 100000) + 1500;
 
-      message.channel.send("**" + "KING RAINED FREE COINS" + "**")
+      message.channel.send("__"+"**" + "KING RAINED FREE COINS" + "**"+"__")
       message.channel.send("CharlesLeemon " + "**" + rand.toLocaleString() + "**")
       CharlesLeemon.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
