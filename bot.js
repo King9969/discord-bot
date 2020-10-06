@@ -38,7 +38,7 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10")
+      message.channel.send("PICK A NUMBER FROM 1 TO 10  (eg bet 10)")
 
     }
     else if (message.content.startsWith("bet " + luc)) {
@@ -121,7 +121,7 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10")
+      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
 
     }
     else if (message.content.startsWith("bet " + luc)) {
@@ -203,7 +203,7 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10")
+      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
 
     }
     else if (message.content.startsWith("bet " + luc)) {
@@ -285,7 +285,7 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10")
+      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
 
     }
     else if (message.content.startsWith("bet " + luc)) {
@@ -367,7 +367,7 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10")
+      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
 
     }
     else if (message.content.startsWith("bet " + luc)) {
@@ -449,7 +449,7 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10")
+      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
 
     }
     else if (message.content.startsWith("bet " + luc)) {
@@ -531,7 +531,7 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10")
+      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
 
     }
     else if (message.content.startsWith("bet " + luc)) {
@@ -615,7 +615,7 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10")
+      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
 
     }
     else if (message.content.startsWith("bet " + luc)) {
