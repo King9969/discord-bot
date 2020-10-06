@@ -177,7 +177,7 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}bal`)) {
 
-      sum = eval(shauny.join('+'))
+      sum = eval(NightShade.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.startsWith(`${prefix}img`)) {
