@@ -211,7 +211,7 @@ client.on('message', message => {
     }
 
   }
-  else if (message.author.username == "CharlesLeemon ") {
+  else if (message.author.username == "CharlesLeemon") {
 
     if (message.content.startsWith(`${prefix}dedo`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
