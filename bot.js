@@ -8,11 +8,12 @@ const pritam = [100000]
 const jupiterfest = []
 const Climax2147 = []
 const JackHeroYO = []
-const NightShade = []
+
+const Insaan = [2]
 
 
 let luc = Math.floor(Math.random() * 10) + 1;
-console.log(luc)
+
 
 
 client.once("ready", () => {
@@ -25,16 +26,41 @@ client.on('message', message => {
   //console.log(message.author)
   //console.log(message.id)
 
+  const getquote = () => {
+    const api = require('./quotes.json')
+    let ran = Math.floor(Math.random() * 1600)
+    const q = api[ran]
+    const a = q.text
+    message.channel.send("**" + a + "**")
+
+
+  }
+  let tt = () => {
+    message.channel.send("https://ibb.co/DDBpMk3")
+  }
+  let img = () => {
+    let rand = Math.floor(Math.random() * 100000) + 1000;
+    message.channel.send("https://picsum.photos/500/800?random=" + rand)
+  }
+
+
+
+  let help = () => {
+    message.channel.send("**" + " pls beg  -- to get free coins " + "**" + " \n " + "**" + " pls img  -- to get random image " + "**" + " \n " + "**" + " bet number  -- to guess no between 1 to 10(eg bet 2) " + "**" + " \n " + "**" + " pls quote  -- to show random quote " + "**" + " \n " + "**" + " pls tt  -- to show timetable " + "**" + " \n " + "**" + " pls bal  -- show yours /servers balance " + "**")
+
+
+  }
 
   if (message.author.username == "king9969") {
 
-    if (message.content.startsWith(`${prefix}dedo`)) {
+    if (message.content.startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
       const ra = rand
 
       rohit.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
+
     }
     else if (message.content.startsWith(`${prefix}luck`)) {
 
@@ -44,7 +70,7 @@ client.on('message', message => {
     else if (message.content.startsWith(`${prefix}rain`)) {
       let rand = Math.floor(Math.random() * 100000) + 1500;
 
-      message.channel.send("__"+"**" + "KING RAINED FREE COINS" + "**"+"__")
+      message.channel.send("__" + "**" + "KING RAINED FREE COINS" + "**" + "__")
       message.channel.send("CharlesLeemon " + "**" + rand.toLocaleString() + "**")
       CharlesLeemon.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
@@ -57,10 +83,10 @@ client.on('message', message => {
       message.channel.send("Climax2147 " + "**" + rand.toLocaleString() + "**")
       Climax2147.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-            message.channel.send("NightShade " + "**" + rand.toLocaleString() + "**")
-      NightShade.push(rand)
+      message.channel.send("Insaan " + "**" + rand.toLocaleString() + "**")
+      Insaan.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-            message.channel.send("JackHeroYO " + "**" + rand.toLocaleString() + "**")
+      message.channel.send("JackHeroYO " + "**" + rand.toLocaleString() + "**")
       JackHeroYO.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
 
@@ -76,7 +102,7 @@ client.on('message', message => {
       rohit.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
-      console.log(luc)
+
 
 
     }
@@ -87,7 +113,7 @@ client.on('message', message => {
 
 
       rohit.push(-rand)
-      message.channel.send("lost " + "**" + rand + "**" + "(pick no between 1 to 10 )")
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
 
 
@@ -99,67 +125,45 @@ client.on('message', message => {
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.startsWith(`${prefix}img`)) {
-      let rand = Math.floor(Math.random() * 100000) + 1000;
-      message.channel.send("https://picsum.photos/500/800?random=" + rand)
+      img()
 
     }
     else if (message.content.startsWith(`${prefix}tt`)) {
 
-      message.channel.send("https://ibb.co/DDBpMk3")
+      tt()
 
     }
     else if (message.content.startsWith(`${prefix}quote`)) {
-      const getquote = () => {
-        const api = require('./quotes.json')
-        let ran = Math.floor(Math.random() * 1600)
-        const q = api[ran]
-        const a = q.text
-        message.channel.send("**" + a + "**")
 
-      }
       getquote();
-
-
 
     }
     else if (message.content.startsWith(`${prefix}help`)) {
-
-
-      message.channel.send("**" + " r dedo  -- to get free coins " + "**")
-      message.channel.send("**" + " r img  -- to get random image " + "**")
-      message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
-      message.channel.send("**" + " r tt  -- to show timetable " + "**")
-      message.channel.send("**" + " r quote  -- to show random quote " + "**")
-      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
-
+      help()
     }
 
   }
-  else if (message.author.username == "NightShade") {
+  else if (message.author.username == "CharlesLeemon") {
 
-    if (message.content.startsWith(`${prefix}dedo`)) {
+    if (message.content.startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand
 
-      NightShade.push(rand)
+
+      CharlesLeemon.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
-    else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
-
-    }
     else if (message.content.startsWith("bet " + luc)) {
 
 
       let rand = Math.floor(Math.random() * 100000) + 100;
 
 
-      NightShade.push(rand)
+      Insaan.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
-      console.log(luc)
+
 
 
     }
@@ -169,8 +173,8 @@ client.on('message', message => {
       let rand = Math.floor(Math.random() * 1000) + 10;
 
 
-      NightShade.push(-rand)
-      message.channel.send("lost " + "**" + rand + "**" + "(pick no between 1 to 10 )")
+      Insaan.push(-rand)
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
 
 
@@ -178,61 +182,41 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}bal`)) {
 
-      sum = eval(NightShade.join('+'))
+      sum = eval(Insaan.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.startsWith(`${prefix}img`)) {
-      let rand = Math.floor(Math.random() * 100000) + 1000;
-      message.channel.send("https://picsum.photos/500/800?random=" + rand)
+      img()
 
     }
     else if (message.content.startsWith(`${prefix}tt`)) {
 
-      message.channel.send("https://ibb.co/DDBpMk3")
+      tt()
 
     }
     else if (message.content.startsWith(`${prefix}quote`)) {
-      const getquote = () => {
-        const api = require('./quotes.json')
-        let ran = Math.floor(Math.random() * 1600)
-        const q = api[ran]
-        const a = q.text
-        message.channel.send("**" + a + "**")
 
-      }
       getquote();
 
 
 
     }
     else if (message.content.startsWith(`${prefix}help`)) {
-
-
-      message.channel.send("**" + " r dedo  -- to get free coins " + "**")
-      message.channel.send("**" + " r img  -- to get random image " + "**")
-      message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
-      message.channel.send("**" + " r tt  -- to show timetable " + "**")
-      message.channel.send("**" + " r quote  -- to show random quote " + "**")
-      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
-
+      help()
     }
 
   }
   else if (message.author.username == "CharlesLeemon") {
 
-    if (message.content.startsWith(`${prefix}dedo`)) {
+    if (message.content.startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand
+
 
       CharlesLeemon.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
-    else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
-
-    }
     else if (message.content.startsWith("bet " + luc)) {
 
 
@@ -242,7 +226,7 @@ client.on('message', message => {
       CharlesLeemon.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
-      console.log(luc)
+
 
 
     }
@@ -253,7 +237,7 @@ client.on('message', message => {
 
 
       CharlesLeemon.push(-rand)
-      message.channel.send("lost " + "**" + rand + "**" + "(pick no between 1 to 10 )")
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
 
 
@@ -265,57 +249,101 @@ client.on('message', message => {
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.startsWith(`${prefix}img`)) {
-      let rand = Math.floor(Math.random() * 100000) + 1000;
-      message.channel.send("https://picsum.photos/500/800?random=" + rand)
+      img()
 
     }
     else if (message.content.startsWith(`${prefix}tt`)) {
 
-      message.channel.send("https://ibb.co/DDBpMk3")
+      tt()
 
     }
     else if (message.content.startsWith(`${prefix}quote`)) {
-      const getquote = () => {
-        const api = require('./quotes.json')
-        let ran = Math.floor(Math.random() * 1600)
-        const q = api[ran]
-        const a = q.text
-        message.channel.send("**" + a + "**")
 
-      }
       getquote();
 
 
 
     }
     else if (message.content.startsWith(`${prefix}help`)) {
+      help()
+    }
+
+  }
+
+  else if (message.author.username == "CharlesLeemon") {
+
+    if (message.content.startsWith(`${prefix}beg`)) {
+      let rand = Math.floor(Math.random() * 10000) + 10;
 
 
-      message.channel.send("**" + " r dedo  -- to get free coins " + "**")
-      message.channel.send("**" + " r img  -- to get random image " + "**")
-      message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
-      message.channel.send("**" + " r tt  -- to show timetable " + "**")
-      message.channel.send("**" + " r quote  -- to show random quote " + "**")
-      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
+      CharlesLeemon.push(rand)
 
+      message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
+    }
+
+    else if (message.content.startsWith("bet " + luc)) {
+
+
+      let rand = Math.floor(Math.random() * 100000) + 100;
+
+
+      CharlesLeemon.push(rand)
+      message.channel.send("won " + "**" + rand + "**" + "coins")
+      luc = Math.floor(Math.random() * 10) + 1;
+
+
+
+    }
+    else if (message.content.startsWith("bet ")) {
+
+
+      let rand = Math.floor(Math.random() * 1000) + 10;
+
+
+      CharlesLeemon.push(-rand)
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
+      luc = Math.floor(Math.random() * 10) + 1;
+
+
+
+    }
+    else if (message.content.startsWith(`${prefix}bal`)) {
+
+      sum = eval(CharlesLeemon.join('+'))
+      message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
+    }
+    else if (message.content.startsWith(`${prefix}img`)) {
+      img()
+
+    }
+    else if (message.content.startsWith(`${prefix}tt`)) {
+
+      tt()
+
+    }
+    else if (message.content.startsWith(`${prefix}quote`)) {
+
+      getquote();
+
+
+
+    }
+    else if (message.content.startsWith(`${prefix}help`)) {
+      help()
     }
 
   }
   else if (message.author.username == "Tatton ka saudagar") {
 
-    if (message.content.startsWith(`${prefix}dedo`)) {
+    if (message.content.startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand
+
 
       pritam.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
-    else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
-
-    }
     else if (message.content.startsWith("bet " + luc)) {
 
 
@@ -325,7 +353,7 @@ client.on('message', message => {
       pritam.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
-      console.log(luc)
+
 
 
     }
@@ -336,7 +364,7 @@ client.on('message', message => {
 
 
       pritam.push(-rand)
-      message.channel.send("lost " + "**" + rand + "**" + "(pick no between 1 to 10 )")
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
 
 
@@ -348,24 +376,16 @@ client.on('message', message => {
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.startsWith(`${prefix}img`)) {
-      let rand = Math.floor(Math.random() * 100000) + 1000;
-      message.channel.send("https://picsum.photos/500/800?random=" + rand)
+      img()
 
     }
     else if (message.content.startsWith(`${prefix}tt`)) {
 
-      message.channel.send("https://ibb.co/DDBpMk3")
+      tt()
 
     }
     else if (message.content.startsWith(`${prefix}quote`)) {
-      const getquote = () => {
-        const api = require('./quotes.json')
-        let ran = Math.floor(Math.random() * 1600)
-        const q = api[ran]
-        const a = q.text
-        message.channel.send("**" + a + "**")
 
-      }
       getquote();
 
 
@@ -373,32 +393,22 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}help`)) {
 
-
-      message.channel.send("**" + " r dedo  -- to get free coins " + "**")
-      message.channel.send("**" + " r img  -- to get random image " + "**")
-      message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
-      message.channel.send("**" + " r tt  -- to show timetable " + "**")
-      message.channel.send("**" + " r quote  -- to show random quote " + "**")
-      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
+      help()
 
     }
 
   }
   else if (message.author.username == "jupiterfest") {
 
-    if (message.content.startsWith(`${prefix}dedo`)) {
+    if (message.content.startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand
+
 
       jupiterfest.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
-    else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
-
-    }
     else if (message.content.startsWith("bet " + luc)) {
 
 
@@ -408,7 +418,7 @@ client.on('message', message => {
       jupiterfest.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
-      console.log(luc)
+
 
 
     }
@@ -419,7 +429,7 @@ client.on('message', message => {
 
 
       jupiterfest.push(-rand)
-      message.channel.send("lost " + "**" + rand + "**" + "(pick no between 1 to 10 )")
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
 
 
@@ -431,24 +441,16 @@ client.on('message', message => {
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.startsWith(`${prefix}img`)) {
-      let rand = Math.floor(Math.random() * 100000) + 1000;
-      message.channel.send("https://picsum.photos/500/800?random=" + rand)
+      img()
 
     }
     else if (message.content.startsWith(`${prefix}tt`)) {
 
-      message.channel.send("https://ibb.co/DDBpMk3")
+      tt()
 
     }
     else if (message.content.startsWith(`${prefix}quote`)) {
-      const getquote = () => {
-        const api = require('./quotes.json')
-        let ran = Math.floor(Math.random() * 1600)
-        const q = api[ran]
-        const a = q.text
-        message.channel.send("**" + a + "**")
 
-      }
       getquote();
 
 
@@ -456,32 +458,22 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}help`)) {
 
-
-      message.channel.send("**" + " r dedo  -- to get free coins " + "**")
-      message.channel.send("**" + " r img  -- to get random image " + "**")
-      message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
-      message.channel.send("**" + " r tt  -- to show timetable " + "**")
-      message.channel.send("**" + " r quote  -- to show random quote " + "**")
-      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
+      help()
 
     }
 
   }
   else if (message.author.username == "Climax2147") {
 
-    if (message.content.startsWith(`${prefix}dedo`)) {
+    if (message.content.startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand
+
 
       Climax2147.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
-    else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
-
-    }
     else if (message.content.startsWith("bet " + luc)) {
 
 
@@ -491,7 +483,7 @@ client.on('message', message => {
       Climax2147.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
-      console.log(luc)
+
 
 
     }
@@ -502,7 +494,7 @@ client.on('message', message => {
 
 
       Climax2147.push(-rand)
-      message.channel.send("lost " + "**" + rand + "**" + "(pick no between 1 to 10 )")
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
 
 
@@ -514,24 +506,16 @@ client.on('message', message => {
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.startsWith(`${prefix}img`)) {
-      let rand = Math.floor(Math.random() * 100000) + 1000;
-      message.channel.send("https://picsum.photos/500/800?random=" + rand)
+      img()
 
     }
     else if (message.content.startsWith(`${prefix}tt`)) {
 
-      message.channel.send("https://ibb.co/DDBpMk3")
+      tt()
 
     }
     else if (message.content.startsWith(`${prefix}quote`)) {
-      const getquote = () => {
-        const api = require('./quotes.json')
-        let ran = Math.floor(Math.random() * 1600)
-        const q = api[ran]
-        const a = q.text
-        message.channel.send("**" + a + "**")
 
-      }
       getquote();
 
 
@@ -539,32 +523,21 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}help`)) {
 
-
-      message.channel.send("**" + " r dedo  -- to get free coins " + "**")
-      message.channel.send("**" + " r img  -- to get random image " + "**")
-      message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
-      message.channel.send("**" + " r tt  -- to show timetable " + "**")
-      message.channel.send("**" + " r quote  -- to show random quote " + "**")
-      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
-
+      help()
     }
 
   }
   else if (message.author.username == "JackHeroYO") {
 
-    if (message.content.startsWith(`${prefix}dedo`)) {
+    if (message.content.startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand
+
 
       JackHeroYO.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
-    else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
-
-    }
     else if (message.content.startsWith("bet " + luc)) {
 
 
@@ -574,7 +547,7 @@ client.on('message', message => {
       JackHeroYO.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
-      console.log(luc)
+
 
 
     }
@@ -585,7 +558,7 @@ client.on('message', message => {
 
 
       JackHeroYO.push(-rand)
-      message.channel.send("lost " + "**" + rand + "**" + "(pick no between 1 to 10 )")
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
 
 
@@ -597,59 +570,39 @@ client.on('message', message => {
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.startsWith(`${prefix}img`)) {
-      let rand = Math.floor(Math.random() * 100000) + 1000;
-      message.channel.send("https://picsum.photos/500/800?random=" + rand)
+      img()
 
     }
     else if (message.content.startsWith(`${prefix}tt`)) {
 
-      message.channel.send("https://ibb.co/DDBpMk3")
+      tt()
 
     }
     else if (message.content.startsWith(`${prefix}quote`)) {
-      const getquote = () => {
-        const api = require('./quotes.json')
-        let ran = Math.floor(Math.random() * 1600)
-        const q = api[ran]
-        const a = q.text
-        message.channel.send("**" + a + "**")
 
-      }
       getquote();
 
 
 
     }
     else if (message.content.startsWith(`${prefix}help`)) {
-
-
-      message.channel.send("**" + " r dedo  -- to get free coins " + "**")
-      message.channel.send("**" + " r img  -- to get random image " + "**")
-      message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
-      message.channel.send("**" + " r tt  -- to show timetable " + "**")
-      message.channel.send("**" + " r quote  -- to show random quote " + "**")
-      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
-      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
+      help()
 
     }
 
   }
 
   else if (message.author.bot == false) {
-    if (message.content.startsWith(`${prefix}dedo`)) {
+    if (message.content.startsWith(`${prefix} beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand
+
 
       balance.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for the server")
       message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
     }
-    else if (message.content.startsWith(`${prefix}luck`)) {
 
-      message.channel.send("PICK A NUMBER FROM 1 TO 10 (eg bet 10)")
-
-    }
     else if (message.content.startsWith("bet " + luc)) {
 
 
@@ -659,7 +612,7 @@ client.on('message', message => {
       balance.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
-      console.log(luc)
+
 
 
     }
@@ -670,7 +623,7 @@ client.on('message', message => {
 
 
       balance.push(-rand)
-      message.channel.send("lost " + "**" + rand + "**" + "(pick no between 1 to 10 )")
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
 
 
@@ -683,29 +636,20 @@ client.on('message', message => {
       message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
     }
     else if (message.content.startsWith(`${prefix}img`)) {
-      let rand = Math.floor(Math.random() * 100000) + 1000;
-      message.channel.send("https://picsum.photos/500/800?random=" + rand)
+      img()
       message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
 
     }
     else if (message.content.startsWith(`${prefix}tt`)) {
 
-      message.channel.send("https://ibb.co/DDBpMk3")
+      tt()
       message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
 
     }
     else if (message.content.startsWith(`${prefix}quote`)) {
-      const getquote = () => {
-        const api = require('./quotes.json')
-        let ran = Math.floor(Math.random() * 1600)
-        const q = api[ran]
-        const a = q.text
-        message.channel.send("**" + a + "**")
-        message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
 
-      }
       getquote();
-
+      message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
 
       Yours
     }
@@ -713,13 +657,7 @@ client.on('message', message => {
 
 
       message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
-      message.channel.send("**" + " r dedo  -- to get free coins " + "**")
-      message.channel.send("**" + " r img  -- to get random image " + "**")
-      message.channel.send("**" + " r bal  -- show yours/servers balance " + "**")
-      message.channel.send("**" + " r tt  -- to show timetable " + "**")
-      message.channel.send("**" + " r quo  -- to show random quote " + "**")
-      message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
-
+      help()
     }
   }
 })
