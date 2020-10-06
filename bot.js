@@ -6,7 +6,6 @@ const rohit = [7777777]
 const CharlesLeemon = []
 const pritam = [100000]
 const AKELDAMA = []
-
 const Climax2147 = []
 const Ganesh_Gaitonde = []
 
@@ -39,6 +38,26 @@ client.on('message', message => {
     else if (message.content.startsWith(`${prefix}luck`)) {
 
       message.channel.send("PICK A NUMBER FROM 1 TO 10  (eg bet 10)")
+
+    }
+    else if (message.content.startsWith(`${prefix}rain`)) {
+      let rand = Math.floor(Math.random() * 100000) + 1500;
+
+      message.channel.send("**"+"KING RAINED FREE COINS"+"**")
+      message.channel.send("**"+"CharlesLeemon"+"**")
+      CharlesLeemon.push(rand)
+      rand = Math.floor(Math.random() * 100000) + 1500;
+      message.channel.send("**"+"pritam"+"**")
+      pritam.push(rand)
+      rand = Math.floor(Math.random() * 100000) + 1500;
+      message.channel.send("**"+"AKELDAMA"+"**")
+      AKELDAMA.push(rand)
+      rand = Math.floor(Math.random() * 100000) + 1500;
+      message.channel.send("**"+"Climax2147"+"**")
+      Climax2147.push(rand)
+      rand = Math.floor(Math.random() * 100000) + 1500;
+      
+      
 
     }
     else if (message.content.startsWith("bet " + luc)) {
@@ -187,6 +206,7 @@ client.on('message', message => {
       message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
+       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
@@ -269,6 +289,7 @@ client.on('message', message => {
       message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
+       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
@@ -351,6 +372,7 @@ client.on('message', message => {
       message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
+       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
@@ -433,6 +455,7 @@ client.on('message', message => {
       message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
+       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
@@ -515,6 +538,7 @@ client.on('message', message => {
       message.channel.send("**" + " r bal  -- show yours /servers balance " + "**")
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
+       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
@@ -598,6 +622,7 @@ client.on('message', message => {
       message.channel.send("**" + " r tt  -- to show timetable " + "**")
       message.channel.send("**" + " r quote  -- to show random quote " + "**")
       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
+       message.channel.send("**" + " r luck  -- to guess no between 1 to 10 " + "**")
 
     }
 
