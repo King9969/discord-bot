@@ -5,7 +5,7 @@ const balance = []
 const rohit = [7777777]
 const CharlesLeemon = []
 const pritam = [100000]
-const AKELDAMA = []
+const jupiterfest = []
 const Climax2147 = []
 const JackHeroYO = []
 const NightShade = []
@@ -51,8 +51,8 @@ client.on('message', message => {
       message.channel.send("pritam " + "**" + rand.toLocaleString() + "**")
       pritam.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-      message.channel.send("AKELDAMA " + "**" + rand.toLocaleString() + "**")
-      AKELDAMA.push(rand)
+      message.channel.send("jupiterfest " + "**" + rand.toLocaleString() + "**")
+      jupiterfest.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
       message.channel.send("Climax2147 " + "**" + rand.toLocaleString() + "**")
       Climax2147.push(rand)
@@ -384,13 +384,13 @@ client.on('message', message => {
     }
 
   }
-  else if (message.author.username == "AKELDAMA") {
+  else if (message.author.username == "jupiterfest") {
 
     if (message.content.startsWith(`${prefix}dedo`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
       const ra = rand
 
-      AKELDAMA.push(rand)
+      jupiterfest.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
@@ -405,7 +405,7 @@ client.on('message', message => {
       let rand = Math.floor(Math.random() * 100000) + 100;
 
 
-      AKELDAMA.push(rand)
+      jupiterfest.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
       console.log(luc)
@@ -418,7 +418,7 @@ client.on('message', message => {
       let rand = Math.floor(Math.random() * 1000) + 10;
 
 
-      AKELDAMA.push(-rand)
+      jupiterfest.push(-rand)
       message.channel.send("lost " + "**" + rand + "**" + "(pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
 
@@ -427,7 +427,7 @@ client.on('message', message => {
     }
     else if (message.content.startsWith(`${prefix}bal`)) {
 
-      sum = eval(AKELDAMA.join('+'))
+      sum = eval(jupiterfest.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.startsWith(`${prefix}img`)) {
