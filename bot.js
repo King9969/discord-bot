@@ -8,7 +8,7 @@ const pritam = [100000]
 const jupiterfest = []
 const Climax2147 = []
 const JackHeroYO = []
-
+const Shauny = []
 const Insaan = [2]
 
 
@@ -208,14 +208,14 @@ client.on('message', message => {
     }
 
   }
-  else if (message.author.username == "CharlesLeemon") {
+  else if (message.author.username == "Shauny") {
 
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
       const ra = rand
 
 
-      CharlesLeemon.push(rand)
+      Shauny.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
@@ -226,7 +226,7 @@ client.on('message', message => {
       let rand = Math.floor(Math.random() * 100000) + 100;
 
 
-      CharlesLeemon.push(rand)
+      Shauny.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
 
@@ -248,7 +248,7 @@ client.on('message', message => {
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
 
-      sum = eval(CharlesLeemon.join('+'))
+      sum = eval(Shauny.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
