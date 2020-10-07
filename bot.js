@@ -33,7 +33,7 @@ client.on('message', message => {
     message.channel.send("https://picsum.photos/500/800?random=" + rand)
   }
   let help = () => {
-    message.channel.send("```"+ " pls beg  -- to get free coins " +  " \n " +  " pls img  -- to get random image " +  " \n " +  " bet number  -- to guess no between 1 to 10(eg bet 2) " +  " \n " + "**" + " pls quote  -- to show random quote " +  " \n " +  " pls tt  -- to show timetable " +  " \n " +  " pls bal  -- show yours /servers balance " + "```")
+    message.channel.send("```" + " pls beg  -- to get free coins " + " \n " + " pls img  -- to get random image " + " \n " + " bet number  -- to guess no between 1 to 10(eg bet 2) " + " \n " + "**" + " pls quote  -- to show random quote " + " \n " + " pls tt  -- to show timetable " + " \n " + " pls bal  -- show yours /servers balance " + "```")
   }
   if (message.author.username == "king9969") {
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
@@ -60,6 +60,10 @@ client.on('message', message => {
       message.channel.send("Climax2147 " + "**" + rand.toLocaleString() + "**")
       Climax2147.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
+      message.channel.send("shauny " + "**" + rand.toLocaleString() + "**")
+      Shauny.push(rand)
+      rand = Math.floor(Math.random() * 100000) + 1500;
+
       message.channel.send("Insaan " + "**" + rand.toLocaleString() + "**")
       Insaan.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
@@ -96,11 +100,11 @@ client.on('message', message => {
       help()
     }
   }
-  else if (message.author.username == "CharlesLeemon") {
+  else if (message.author.username == "Insaan") {
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
       const ra = rand
-      CharlesLeemon.push(rand)
+      Insaan.push(rand)
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
     else if (message.content.toLowerCase().startsWith("bet " + luc)) {
@@ -147,7 +151,7 @@ client.on('message', message => {
     }
     else if (message.content.toLowerCase().startsWith("bet ")) {
       let rand = Math.floor(Math.random() * 1000) + 10;
-      CharlesLeemon.push(-rand)
+      Shauny.push(-rand)
       message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
     }
