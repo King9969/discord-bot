@@ -13,22 +13,6 @@ const Insaan = [2]
 const Kazumax = []
 
 
-const meme = ["https://i.imgur.com/fV0Wmcp.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRn86GYKy6zjyr703HT5yduPNEy7tCEiXBvOA&usqp=CAU",
-  "https://i.imgur.com/UUYXYHih.jpg",
-  "https://i.pinimg.com/564x/14/7a/91/147a919e43689c5567ab32f1438ecf20.jpg",
-  "https://i.pinimg.com/564x/10/cf/0c/10cf0c5bf5c4bb49dc0d7c4712837bcb.jpg",
-  "https://memetemplatehouse.com/wp-content/uploads/2020/06/abe-bhosdike-chutiya-ho-kya.jpg",
-  "https://memetemplatehouse.com/wp-content/uploads/2020/06/pdhne-likhne-wale-chatro-ko-rajneeti-se-dur-rehna-chaiye.jpg",
-  "https://memetemplatehouse.com/wp-content/uploads/2020/06/kya-bhosdike-mirzapur-meme.jpg",
-  "https://memetemplatehouse.com/wp-content/uploads/2020/05/bhosdike-mirzapur-meme-template.jpg",
-  "https://3.bp.blogspot.com/-eYIBmKAUYF0/W2KxCWx04BI/AAAAAAAAB-k/5q5qNFXlrOg6kg1EeA1RDt5h4bb_nOCyACLcBGAs/s1600/IMG_20180731_182656.jpg",
-  "https://i.ibb.co/92xdbvy/image.png",
-  "https://humornama.com/wp-content/uploads/2020/08/Nikal-Lavde-meme-template-on-Hindustani-bhau.jpg",
-  "https://memetemplatehouse.com/wp-content/uploads/2020/05/yahin-p-marke-leta-denge-mirzapur-meme-template.jpg"
-]
-
-
 
 let luc = Math.floor(Math.random() * 10) + 1;
 client.once("ready", () => {
@@ -55,7 +39,7 @@ client.on('message', message => {
   let meme = () => {
     const meme = ["https://i.imgur.com/fV0Wmcp.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRn86GYKy6zjyr703HT5yduPNEy7tCEiXBvOA&usqp=CAU",
-      "https://i.imgur.com/UUYXYHih.jpg",
+      "https://i.ibb.co/vdZQsQp/UUYXYHih.jpg",
       "https://i.pinimg.com/564x/14/7a/91/147a919e43689c5567ab32f1438ecf20.jpg",
       "https://i.pinimg.com/564x/10/cf/0c/10cf0c5bf5c4bb49dc0d7c4712837bcb.jpg",
       "https://memetemplatehouse.com/wp-content/uploads/2020/06/abe-bhosdike-chutiya-ho-kya.jpg",
@@ -73,7 +57,7 @@ client.on('message', message => {
     message.channel.send(meme[gm])
   }
   let help = () => {
-    message.channel.send("```" + " pls beg  -- to get free coins " + " \n " + " pls img  -- to get random image " + " \n " + " bet number  -- to guess no between 1 to 10(eg bet 2) " + " \n " + " pls quote  -- to show random quote " + " \n " + " pls tt  -- to show timetable " + " \n " + " pls bal  -- show yours /servers balance " + "```")
+    message.channel.send("```" + "pls beg  -- to get free coins " + " \n " + " pls img  -- to get random image " + " \n " + " bet number  -- to guess no between 1 to 10(eg bet 2) " + " \n " + " pls quote  -- to show random quote " + " \n " + " pls tt  -- to show timetable " + " \n " + " pls bal  -- show yours /servers balance " + " \n " + " pls gm  -- GM " + "```")
   }
   if (message.author.username == "king9969") {
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
