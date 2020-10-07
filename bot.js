@@ -601,7 +601,7 @@ client.on('message', message => {
   }
 
   else if (message.author.bot == false) {
-    if (message.content.startsWith(`${prefix} beg`)) {
+    if (message.content.startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
       const ra = rand;
 
