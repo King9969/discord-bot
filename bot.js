@@ -33,7 +33,7 @@ client.on('message', message => {
     message.channel.send("https://picsum.photos/500/800?random=" + rand)
   }
   let help = () => {
-    message.channel.send("```" + " pls beg  -- to get free coins " + " \n " + " pls img  -- to get random image " + " \n " + " bet number  -- to guess no between 1 to 10(eg bet 2) " + " \n " +  " pls quote  -- to show random quote " + " \n " + " pls tt  -- to show timetable " + " \n " + " pls bal  -- show yours /servers balance " + "```")
+    message.channel.send("```" + " pls beg  -- to get free coins " + " \n " + " pls img  -- to get random image " + " \n " + " bet number  -- to guess no between 1 to 10(eg bet 2) " + " \n " + " pls quote  -- to show random quote " + " \n " + " pls tt  -- to show timetable " + " \n " + " pls bal  -- show yours /servers balance " + "```")
   }
   if (message.author.username == "king9969") {
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
@@ -354,44 +354,25 @@ client.on('message', message => {
   }
   else if (message.author.bot == false) {
     if (message.content.toLowerCase().startsWith(`${prefix} beg`)) {
-      let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand
-      balance.push(rand)
-      message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for the server")
-      message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
+
+      message.channel.send("```" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "```")
     }
-    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
-      let rand = Math.floor(Math.random() * 100000) + 100;
-      balance.push(rand)
-      message.channel.send("won " + "**" + rand + "**" + "coins")
-      luc = Math.floor(Math.random() * 10) + 1;
-    }
-    else if (message.content.toLowerCase().startsWith("bet ")) {
-      let rand = Math.floor(Math.random() * 1000) + 10;
-      balance.push(-rand)
-      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
-      luc = Math.floor(Math.random() * 10) + 1;
-    }
-    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
-      sum = eval(balance.join('+'))
-      message.channel.send("SERVERS NET WORTH IS " + "**" + sum.toLocaleString() + "**")
-      message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
-    }
+
     else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
       img()
-      message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
+      message.channel.send("```" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "```")
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
       tt()
-      message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
+      message.channel.send("```" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "```")
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
       getquote();
-      message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
+      message.channel.send("```" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "```")
       Yours
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
-      message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
+      message.channel.send("```" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "```")
       help()
     }
   }
