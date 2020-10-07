@@ -46,29 +46,28 @@ client.on('message', message => {
 
 
   let help = () => {
-    message.channel.send("```" + " \n " + " pls beg  -- to get free coins " + " \n " + " pls img  -- to get random image " + " \n " + " bet number  -- to guess no between 1 to 10(eg bet 2) " + " \n " + " pls quote  -- to show random quote " + " \n " + " pls tt  -- to show timetable " + " \n " + " pls bal  -- show yours /servers balance " + " \n " + "```")
+    message.channel.send("**" + " pls beg  -- to get free coins " + "**" + " \n " + "**" + " pls img  -- to get random image " + "**" + " \n " + "**" + " bet number  -- to guess no between 1 to 10(eg bet 2) " + "**" + " \n " + "**" + " pls quote  -- to show random quote " + "**" + " \n " + "**" + " pls tt  -- to show timetable " + "**" + " \n " + "**" + " pls bal  -- show yours /servers balance " + "**")
 
 
   }
 
   if (message.author.username == "king9969") {
 
-    if (message.content.startsWith(`${prefix}beg`)) {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand;
-
+      const ra = rand
 
       rohit.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
 
     }
-    else if (message.content.startsWith(`${prefix}luck`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}luck`)) {
 
       message.channel.send("PICK A NUMBER FROM 1 TO 10  (eg bet 10)")
 
     }
-    else if (message.content.startsWith(`${prefix}rain`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}rain`)) {
       let rand = Math.floor(Math.random() * 100000) + 1500;
 
       message.channel.send("__" + "**" + "KING RAINED FREE COINS" + "**" + "__")
@@ -94,7 +93,7 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith("bet " + luc)) {
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
 
 
       let rand = Math.floor(Math.random() * 100000) + 100;
@@ -107,7 +106,7 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith("bet ")) {
+    else if (message.content.toLowerCase().startsWith("bet ")) {
 
 
       let rand = Math.floor(Math.random() * 1000) + 10;
@@ -120,35 +119,34 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith(`${prefix}bal`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
 
       sum = eval(rohit.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
-    else if (message.content.startsWith(`${prefix}img`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
       img()
 
     }
-    else if (message.content.startsWith(`${prefix}tt`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
 
       tt()
 
     }
-    else if (message.content.startsWith(`${prefix}quote`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
 
       getquote();
 
     }
-    else if (message.content.startsWith(`${prefix}help`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
       help()
     }
 
   }
   else if (message.author.username == "CharlesLeemon") {
 
-    if (message.content.startsWith(`${prefix}beg`)) {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand;
 
 
       CharlesLeemon.push(rand)
@@ -156,7 +154,7 @@ client.on('message', message => {
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
 
-    else if (message.content.startsWith("bet " + luc)) {
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
 
 
       let rand = Math.floor(Math.random() * 100000) + 100;
@@ -169,7 +167,7 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith("bet ")) {
+    else if (message.content.toLowerCase().startsWith("bet ")) {
 
 
       let rand = Math.floor(Math.random() * 1000) + 10;
@@ -182,37 +180,36 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith(`${prefix}bal`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
 
       sum = eval(Insaan.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
-    else if (message.content.startsWith(`${prefix}img`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
       img()
 
     }
-    else if (message.content.startsWith(`${prefix}tt`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
 
       tt()
 
     }
-    else if (message.content.startsWith(`${prefix}quote`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
 
       getquote();
 
 
 
     }
-    else if (message.content.startsWith(`${prefix}help`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
       help()
     }
 
   }
   else if (message.author.username == "CharlesLeemon") {
 
-    if (message.content.startsWith(`${prefix}beg`)) {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand;
 
 
       CharlesLeemon.push(rand)
@@ -220,7 +217,7 @@ client.on('message', message => {
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
 
-    else if (message.content.startsWith("bet " + luc)) {
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
 
 
       let rand = Math.floor(Math.random() * 100000) + 100;
@@ -233,7 +230,7 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith("bet ")) {
+    else if (message.content.toLowerCase().startsWith("bet ")) {
 
 
       let rand = Math.floor(Math.random() * 1000) + 10;
@@ -246,28 +243,28 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith(`${prefix}bal`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
 
       sum = eval(CharlesLeemon.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
-    else if (message.content.startsWith(`${prefix}img`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
       img()
 
     }
-    else if (message.content.startsWith(`${prefix}tt`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
 
       tt()
 
     }
-    else if (message.content.startsWith(`${prefix}quote`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
 
       getquote();
 
 
 
     }
-    else if (message.content.startsWith(`${prefix}help`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
       help()
     }
 
@@ -275,9 +272,8 @@ client.on('message', message => {
 
   else if (message.author.username == "CharlesLeemon") {
 
-    if (message.content.startsWith(`${prefix}beg`)) {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand;
 
 
       CharlesLeemon.push(rand)
@@ -285,7 +281,7 @@ client.on('message', message => {
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
 
-    else if (message.content.startsWith("bet " + luc)) {
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
 
 
       let rand = Math.floor(Math.random() * 100000) + 100;
@@ -298,7 +294,7 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith("bet ")) {
+    else if (message.content.toLowerCase().startsWith("bet ")) {
 
 
       let rand = Math.floor(Math.random() * 1000) + 10;
@@ -311,37 +307,36 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith(`${prefix}bal`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
 
       sum = eval(CharlesLeemon.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
-    else if (message.content.startsWith(`${prefix}img`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
       img()
 
     }
-    else if (message.content.startsWith(`${prefix}tt`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
 
       tt()
 
     }
-    else if (message.content.startsWith(`${prefix}quote`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
 
       getquote();
 
 
 
     }
-    else if (message.content.startsWith(`${prefix}help`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
       help()
     }
 
   }
   else if (message.author.username == "Tatton ka saudagar") {
 
-    if (message.content.startsWith(`${prefix}beg`)) {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand;
 
 
       pritam.push(rand)
@@ -349,7 +344,7 @@ client.on('message', message => {
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
 
-    else if (message.content.startsWith("bet " + luc)) {
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
 
 
       let rand = Math.floor(Math.random() * 100000) + 100;
@@ -362,7 +357,7 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith("bet ")) {
+    else if (message.content.toLowerCase().startsWith("bet ")) {
 
 
       let rand = Math.floor(Math.random() * 1000) + 10;
@@ -375,28 +370,28 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith(`${prefix}bal`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
 
       sum = eval(pritam.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
-    else if (message.content.startsWith(`${prefix}img`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
       img()
 
     }
-    else if (message.content.startsWith(`${prefix}tt`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
 
       tt()
 
     }
-    else if (message.content.startsWith(`${prefix}quote`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
 
       getquote();
 
 
 
     }
-    else if (message.content.startsWith(`${prefix}help`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
 
       help()
 
@@ -405,9 +400,8 @@ client.on('message', message => {
   }
   else if (message.author.username == "jupiterfest") {
 
-    if (message.content.startsWith(`${prefix}beg`)) {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand;
 
 
       jupiterfest.push(rand)
@@ -415,7 +409,7 @@ client.on('message', message => {
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
 
-    else if (message.content.startsWith("bet " + luc)) {
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
 
 
       let rand = Math.floor(Math.random() * 100000) + 100;
@@ -428,7 +422,7 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith("bet ")) {
+    else if (message.content.toLowerCase().startsWith("bet ")) {
 
 
       let rand = Math.floor(Math.random() * 1000) + 10;
@@ -441,28 +435,28 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith(`${prefix}bal`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
 
       sum = eval(jupiterfest.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
-    else if (message.content.startsWith(`${prefix}img`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
       img()
 
     }
-    else if (message.content.startsWith(`${prefix}tt`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
 
       tt()
 
     }
-    else if (message.content.startsWith(`${prefix}quote`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
 
       getquote();
 
 
 
     }
-    else if (message.content.startsWith(`${prefix}help`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
 
       help()
 
@@ -471,9 +465,8 @@ client.on('message', message => {
   }
   else if (message.author.username == "Climax2147") {
 
-    if (message.content.startsWith(`${prefix}beg`)) {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand;
 
 
       Climax2147.push(rand)
@@ -481,7 +474,7 @@ client.on('message', message => {
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
 
-    else if (message.content.startsWith("bet " + luc)) {
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
 
 
       let rand = Math.floor(Math.random() * 100000) + 100;
@@ -494,7 +487,7 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith("bet ")) {
+    else if (message.content.toLowerCase().startsWith("bet ")) {
 
 
       let rand = Math.floor(Math.random() * 1000) + 10;
@@ -507,28 +500,28 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith(`${prefix}bal`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
 
       sum = eval(Climax2147.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
-    else if (message.content.startsWith(`${prefix}img`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
       img()
 
     }
-    else if (message.content.startsWith(`${prefix}tt`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
 
       tt()
 
     }
-    else if (message.content.startsWith(`${prefix}quote`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
 
       getquote();
 
 
 
     }
-    else if (message.content.startsWith(`${prefix}help`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
 
       help()
     }
@@ -536,9 +529,8 @@ client.on('message', message => {
   }
   else if (message.author.username == "JackHeroYO") {
 
-    if (message.content.startsWith(`${prefix}beg`)) {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand;
 
 
       JackHeroYO.push(rand)
@@ -546,7 +538,7 @@ client.on('message', message => {
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
 
-    else if (message.content.startsWith("bet " + luc)) {
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
 
 
       let rand = Math.floor(Math.random() * 100000) + 100;
@@ -559,7 +551,7 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith("bet ")) {
+    else if (message.content.toLowerCase().startsWith("bet ")) {
 
 
       let rand = Math.floor(Math.random() * 1000) + 10;
@@ -572,28 +564,28 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith(`${prefix}bal`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
 
       sum = eval(JackHeroYO.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
-    else if (message.content.startsWith(`${prefix}img`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
       img()
 
     }
-    else if (message.content.startsWith(`${prefix}tt`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
 
       tt()
 
     }
-    else if (message.content.startsWith(`${prefix}quote`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
 
       getquote();
 
 
 
     }
-    else if (message.content.startsWith(`${prefix}help`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
       help()
 
     }
@@ -601,9 +593,8 @@ client.on('message', message => {
   }
 
   else if (message.author.bot == false) {
-    if (message.content.startsWith(`${prefix}beg`)) {
+    if (message.content.toLowerCase().startsWith(`${prefix} beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
-      const ra = rand;
 
 
       balance.push(rand)
@@ -612,7 +603,7 @@ client.on('message', message => {
       message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
     }
 
-    else if (message.content.startsWith("bet " + luc)) {
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
 
 
       let rand = Math.floor(Math.random() * 100000) + 100;
@@ -625,7 +616,7 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith("bet ")) {
+    else if (message.content.toLowerCase().startsWith("bet ")) {
 
 
       let rand = Math.floor(Math.random() * 1000) + 10;
@@ -638,31 +629,31 @@ client.on('message', message => {
 
 
     }
-    else if (message.content.startsWith(`${prefix}bal`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
 
       sum = eval(balance.join('+'))
       message.channel.send("SERVERS NET WORTH IS " + "**" + sum.toLocaleString() + "**")
       message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
     }
-    else if (message.content.startsWith(`${prefix}img`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
       img()
       message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
 
     }
-    else if (message.content.startsWith(`${prefix}tt`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
 
       tt()
       message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
 
     }
-    else if (message.content.startsWith(`${prefix}quote`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
 
       getquote();
       message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
 
       Yours
     }
-    else if (message.content.startsWith(`${prefix}help`)) {
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
 
 
       message.channel.send("**" + "DM TO KING9969 TO ADD YOUR ACCOUNT" + "**")
