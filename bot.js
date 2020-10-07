@@ -10,6 +10,7 @@ const Climax2147 = []
 const JackHeroYO = []
 const Shauny = []
 const Insaan = [2]
+const Kazumax = []
 let luc = Math.floor(Math.random() * 10) + 1;
 client.once("ready", () => {
   console.log("ready")
@@ -62,6 +63,9 @@ client.on('message', message => {
       rand = Math.floor(Math.random() * 100000) + 1500;
       message.channel.send("shauny " + "**" + rand.toLocaleString() + "**")
       Shauny.push(rand)
+      rand = Math.floor(Math.random() * 100000) + 1500;
+      message.channel.send("Kazumax " + "**" + rand.toLocaleString() + "**")
+      Kazumax.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
 
       message.channel.send("Insaan " + "**" + rand.toLocaleString() + "**")
@@ -121,6 +125,42 @@ client.on('message', message => {
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
       sum = eval(Insaan.join('+'))
+      message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
+      img()
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
+      tt()
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
+      getquote();
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
+      help()
+    }
+  }
+  else if (message.author.username == "Kazumax") {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
+      let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
+      Kazumax.push(rand)
+      message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
+    }
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
+      let rand = Math.floor(Math.random() * 100000) + 100;
+      Kazumax.push(rand)
+      message.channel.send("won " + "**" + rand + "**" + "coins")
+      luc = Math.floor(Math.random() * 10) + 1;
+    }
+    else if (message.content.toLowerCase().startsWith("bet ")) {
+      let rand = Math.floor(Math.random() * 1000) + 10;
+      Kazumax.push(-rand)
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
+      luc = Math.floor(Math.random() * 10) + 1;
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
+      sum = eval(Kazumax.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
