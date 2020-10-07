@@ -57,6 +57,7 @@ client.on('message', message => {
       let rand = Math.floor(Math.random() * 10000) + 10;
       const ra = rand
 
+
       rohit.push(rand)
 
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
@@ -147,6 +148,7 @@ client.on('message', message => {
 
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
 
 
       CharlesLeemon.push(rand)
@@ -210,6 +212,7 @@ client.on('message', message => {
 
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
 
 
       CharlesLeemon.push(rand)
@@ -274,6 +277,7 @@ client.on('message', message => {
 
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
 
 
       CharlesLeemon.push(rand)
@@ -337,6 +341,7 @@ client.on('message', message => {
 
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
 
 
       pritam.push(rand)
@@ -402,6 +407,7 @@ client.on('message', message => {
 
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
 
 
       jupiterfest.push(rand)
@@ -467,6 +473,7 @@ client.on('message', message => {
 
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
 
 
       Climax2147.push(rand)
@@ -531,6 +538,7 @@ client.on('message', message => {
 
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
 
 
       JackHeroYO.push(rand)
@@ -595,6 +603,7 @@ client.on('message', message => {
   else if (message.author.bot == false) {
     if (message.content.toLowerCase().startsWith(`${prefix} beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
 
 
       balance.push(rand)
