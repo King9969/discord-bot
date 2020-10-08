@@ -13,6 +13,7 @@ const Insaan = [24442]
 const Kazumax = [25452]
 const Preetam = [22122]
 const Ganesh_Gaitonde = [22123]
+const bantai069 = [52123]
 
 
 
@@ -104,6 +105,9 @@ client.on('message', message => {
       message.channel.send("Preetam " + "**" + rand.toLocaleString() + "**")
       Preetam.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
+      message.channel.send("bantai069 " + "**" + rand.toLocaleString() + "**")
+      bantai069.push(rand)
+      rand = Math.floor(Math.random() * 100000) + 1500;
 
       message.channel.send("Insaan " + "**" + rand.toLocaleString() + "**")
       Insaan.push(rand)
@@ -126,6 +130,42 @@ client.on('message', message => {
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
       sum = eval(rohit.join('+'))
+      message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
+      img()
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
+      tt()
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
+      getquote();
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
+      help()
+    }
+  }
+  else if (message.author.username == "bantai069") {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
+      let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
+      bantai069.push(rand)
+      message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
+    }
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
+      let rand = Math.floor(Math.random() * 100000) + 100;
+      bantai069.push(rand)
+      message.channel.send("won " + "**" + rand + "**" + "coins")
+      luc = Math.floor(Math.random() * 10) + 1;
+    }
+    else if (message.content.toLowerCase().startsWith("bet ")) {
+      let rand = Math.floor(Math.random() * 1000) + 10;
+      bantai069.push(-rand)
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
+      luc = Math.floor(Math.random() * 10) + 1;
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
+      sum = eval(bantai069.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
