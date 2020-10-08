@@ -9,7 +9,7 @@ const jupiterfest = [321312]
 const Climax2147 = [42212]
 const JackHeroYO = [12412]
 const shauny = [21123]
-const Insaan = [2]
+const Insaan = [24412]
 const Kazumax = [12312]
 
 
