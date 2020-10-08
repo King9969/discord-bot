@@ -50,9 +50,7 @@ client.on('message', message => {
       "https://i.ibb.co/92xdbvy/image.png",
       "https://humornama.com/wp-content/uploads/2020/08/Nikal-Lavde-meme-template-on-Hindustani-bhau.jpg",
       "https://memetemplatehouse.com/wp-content/uploads/2020/05/yahin-p-marke-leta-denge-mirzapur-meme-template.jpg",
-      "https://cdn.discordapp.com/attachments/761781032382365707/763584613871386664/Screenshot_20201008-074031.jpg",
-      "https://cdn.discordapp.com/attachments/761781032382365707/763584613330845746/Screenshot_20201008-074208.jpg",
-      "https://cdn.discordapp.com/attachments/761781032382365707/763584613649874994/Screenshot_20201008-074111.jpg",
+      "https://cdn.discordapp.com/attachments/761781032382365707/763584613871386664/Screenshot_20201008-074031.jpg",      
       "https://cdn.discordapp.com/attachments/761781032382365707/763586311189430272/Screenshot_20201008-074803.jpg",
       "https://cdn.discordapp.com/attachments/761781032382365707/763586311525105715/Screenshot_20201008-074750.jpg",
       "https://cdn.discordapp.com/attachments/761781032382365707/763584613473189908/Screenshot_20201008-074142.jpg",
@@ -60,7 +58,7 @@ client.on('message', message => {
 
     ]
 
-    let gm = Math.floor(Math.random() * 22);
+    let gm = Math.floor(Math.random() * 20);
 
     message.channel.send(meme[gm])
   }
