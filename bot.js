@@ -1,16 +1,16 @@
 const Discord = require("discord.js")
 const { prefix, token, } = require('./config.json')
 const client = new Discord.Client()
-const balance = []
+
 const rohit = [7777777]
-const CharlesLeemon = []
+const CharlesLeemon = [223132]
 const pritam = [100000]
-const jupiterfest = []
-const Climax2147 = []
-const JackHeroYO = []
-const Shauny = []
+const jupiterfest = [321312]
+const Climax2147 = [42212]
+const JackHeroYO = [12412]
+const shauny = [21123]
 const Insaan = [2]
-const Kazumax = []
+const Kazumax = [12312]
 
 
 
@@ -50,7 +50,7 @@ client.on('message', message => {
       "https://i.ibb.co/92xdbvy/image.png",
       "https://humornama.com/wp-content/uploads/2020/08/Nikal-Lavde-meme-template-on-Hindustani-bhau.jpg",
       "https://memetemplatehouse.com/wp-content/uploads/2020/05/yahin-p-marke-leta-denge-mirzapur-meme-template.jpg",
-      "https://cdn.discordapp.com/attachments/761781032382365707/763584613871386664/Screenshot_20201008-074031.jpg",      
+      "https://cdn.discordapp.com/attachments/761781032382365707/763584613871386664/Screenshot_20201008-074031.jpg",
       "https://cdn.discordapp.com/attachments/761781032382365707/763586311189430272/Screenshot_20201008-074803.jpg",
       "https://cdn.discordapp.com/attachments/761781032382365707/763586311525105715/Screenshot_20201008-074750.jpg",
       "https://cdn.discordapp.com/attachments/761781032382365707/763584613473189908/Screenshot_20201008-074142.jpg",
@@ -91,7 +91,7 @@ client.on('message', message => {
       Climax2147.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
       message.channel.send("shauny " + "**" + rand.toLocaleString() + "**")
-      Shauny.push(rand)
+      shauny.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
       message.channel.send("Kazumax " + "**" + rand.toLocaleString() + "**")
       Kazumax.push(rand)
@@ -205,27 +205,27 @@ client.on('message', message => {
       help()
     }
   }
-  else if (message.author.username == "Shauny") {
+  else if (message.author.username == "shauny") {
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
       const ra = rand
-      Shauny.push(rand)
+      shauny.push(rand)
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
     else if (message.content.toLowerCase().startsWith("bet " + luc)) {
       let rand = Math.floor(Math.random() * 100000) + 100;
-      Shauny.push(rand)
+      shauny.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
     }
     else if (message.content.toLowerCase().startsWith("bet ")) {
       let rand = Math.floor(Math.random() * 1000) + 10;
-      Shauny.push(-rand)
+      shauny.push(-rand)
       message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
-      sum = eval(Shauny.join('+'))
+      sum = eval(shauny.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
