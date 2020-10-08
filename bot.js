@@ -3,14 +3,16 @@ const { prefix, token, } = require('./config.json')
 const client = new Discord.Client()
 
 const rohit = [7777777]
-const CharlesLeemon = [223132]
-const pritam = [100000]
-const jupiterfest = [321312]
-const Climax2147 = [42212]
-const JackHeroYO = [12412]
-const shauny = [21123]
-const Insaan = [24412]
-const Kazumax = [12312]
+const CharlesLeemon = [214213]
+const pritam = [100440]
+const jupiterfest = [54554]
+const Climax2147 = [34341]
+const JackHeroYO = [54544]
+const shauny = [243252]
+const Insaan = [24442]
+const Kazumax = [25452]
+const Preetam = [22122]
+const Ganesh_Gaitonde = [22123]
 
 
 
@@ -96,6 +98,12 @@ client.on('message', message => {
       message.channel.send("Kazumax " + "**" + rand.toLocaleString() + "**")
       Kazumax.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
+      message.channel.send("Ganesh_Gaitonde " + "**" + rand.toLocaleString() + "**")
+      Ganesh_Gaitonde.push(rand)
+      rand = Math.floor(Math.random() * 100000) + 1500;
+      message.channel.send("Preetam " + "**" + rand.toLocaleString() + "**")
+      Preetam.push(rand)
+      rand = Math.floor(Math.random() * 100000) + 1500;
 
       message.channel.send("Insaan " + "**" + rand.toLocaleString() + "**")
       Insaan.push(rand)
@@ -118,6 +126,42 @@ client.on('message', message => {
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
       sum = eval(rohit.join('+'))
+      message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
+      img()
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
+      tt()
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
+      getquote();
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
+      help()
+    }
+  }
+  else if (message.author.username == "Preetam bahi") {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
+      let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
+      Preetam.push(rand)
+      message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
+    }
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
+      let rand = Math.floor(Math.random() * 100000) + 100;
+      Preetam.push(rand)
+      message.channel.send("won " + "**" + rand + "**" + "coins")
+      luc = Math.floor(Math.random() * 10) + 1;
+    }
+    else if (message.content.toLowerCase().startsWith("bet ")) {
+      let rand = Math.floor(Math.random() * 1000) + 10;
+      Preetam.push(-rand)
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
+      luc = Math.floor(Math.random() * 10) + 1;
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
+      sum = eval(Preetam.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
@@ -190,6 +234,42 @@ client.on('message', message => {
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
       sum = eval(Kazumax.join('+'))
+      message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
+      img()
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}tt`)) {
+      tt()
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}quote`)) {
+      getquote();
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}help`)) {
+      help()
+    }
+  }
+  else if (message.author.username == "Ganesh_Gaitonde") {
+    if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
+      let rand = Math.floor(Math.random() * 10000) + 10;
+      const ra = rand
+      Ganesh_Gaitonde.push(rand)
+      message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
+    }
+    else if (message.content.toLowerCase().startsWith("bet " + luc)) {
+      let rand = Math.floor(Math.random() * 100000) + 100;
+      Ganesh_Gaitonde.push(rand)
+      message.channel.send("won " + "**" + rand + "**" + "coins")
+      luc = Math.floor(Math.random() * 10) + 1;
+    }
+    else if (message.content.toLowerCase().startsWith("bet ")) {
+      let rand = Math.floor(Math.random() * 1000) + 10;
+      Ganesh_Gaitonde.push(-rand)
+      message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
+      luc = Math.floor(Math.random() * 10) + 1;
+    }
+    else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
+      sum = eval(Ganesh_Gaitonde.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
