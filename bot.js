@@ -33,7 +33,7 @@ client.on('message', message => {
     message.channel.send("**" + a + "**")
   }
   let tt = () => {
-    message.channel.send("https://i.ibb.co/X80M5Cc/pp.jpg")
+    message.channel.send("https://i.ibb.co/Ws6KhpM/pp.jpg")
   }
   let img = () => {
     let rand = Math.floor(Math.random() * 100000) + 1000;
