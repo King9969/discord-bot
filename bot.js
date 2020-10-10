@@ -88,7 +88,7 @@ client.on('message', message => {
       message.channel.send("pritam " + "**" + rand.toLocaleString() + "**")
       pritam.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-      message.channel.send("dank memer " + "**" + rand.toLocaleString() + "**")
+      message.channel.send("jupiterfest " + "**" + rand.toLocaleString() + "**")
       jupiterfest.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
       message.channel.send("Climax2147 " + "**" + rand.toLocaleString() + "**")
