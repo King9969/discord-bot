@@ -434,7 +434,7 @@ client.on('message', message => {
       help()
     }
   }
-  else if (message.author.username == "dank memer") {
+  else if (message.author.username == "jupiterfest") {
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
       const ra = rand
