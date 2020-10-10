@@ -5,7 +5,7 @@ const client = new Discord.Client()
 const rohit = [7777777]
 const CharlesLeemon = [214213]
 const pritam = [100440]
-const dank memer kewl = [564554]
+const dank memer = [564554]
 const Climax2147 = [34341]
 const JackHeroYO = [54544]
 const shauny = [243252]
@@ -88,8 +88,8 @@ client.on('message', message => {
       message.channel.send("pritam " + "**" + rand.toLocaleString() + "**")
       pritam.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
-      message.channel.send("dank memer kewl " + "**" + rand.toLocaleString() + "**")
-      dank memer kewl.push(rand)
+      message.channel.send("dank memer " + "**" + rand.toLocaleString() + "**")
+      dank memer.push(rand)
       rand = Math.floor(Math.random() * 100000) + 1500;
       message.channel.send("Climax2147 " + "**" + rand.toLocaleString() + "**")
       Climax2147.push(rand)
@@ -434,27 +434,27 @@ client.on('message', message => {
       help()
     }
   }
-  else if (message.author.username == "dank memer kewl") {
+  else if (message.author.username == "dank memer") {
     if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
       let rand = Math.floor(Math.random() * 10000) + 10;
       const ra = rand
-      dank memer kewl.push(rand)
+      dank memer.push(rand)
       message.channel.send("You got " + "**" + ra.toLocaleString() + "**" + " coins for  yourself")
     }
     else if (message.content.toLowerCase().startsWith("bet " + luc)) {
       let rand = Math.floor(Math.random() * 100000) + 100;
-      dank memer kewl.push(rand)
+      dank memer.push(rand)
       message.channel.send("won " + "**" + rand + "**" + "coins")
       luc = Math.floor(Math.random() * 10) + 1;
     }
     else if (message.content.toLowerCase().startsWith("bet ")) {
       let rand = Math.floor(Math.random() * 1000) + 10;
-      dank memer kewl.push(-rand)
+      dank memer.push(-rand)
       message.channel.send("lost " + "**" + rand + "**" + " coins " + " (pick no between 1 to 10 )")
       luc = Math.floor(Math.random() * 10) + 1;
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}bal`)) {
-      sum = eval(dank memer kewl.join('+'))
+      sum = eval(dank memer.join('+'))
       message.channel.send("**" + message.author.username + "**" + " NET WORTH IS " + "**" + sum.toLocaleString() + "**")
     }
     else if (message.content.toLowerCase().startsWith(`${prefix}img`)) {
