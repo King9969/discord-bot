@@ -34,7 +34,7 @@ client.on('message', message => {
   }
   let tt = () => {
     message.channel.send("https://i.ibb.co/Ws6KhpM/pp.jpg")
-    message.channel.send("https://i.ibb.co/q5bfR0W/Screenshot-13.png")
+
   }
   let img = () => {
     let rand = Math.floor(Math.random() * 100000) + 1000;
