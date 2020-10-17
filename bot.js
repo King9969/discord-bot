@@ -34,12 +34,12 @@
     }
     let tt = () => {
       message.channel.send("https://i.ibb.co/Ws6KhpM/pp.jpg")
-      message.channel.send("pls beg")
+
     }
     let img = () => {
       let rand = Math.floor(Math.random() * 100000) + 1000;
       message.channel.send("https://picsum.photos/500/800?random=" + rand)
-      message.channel.send("pls beg")
+
     }
     let meme = () => {
       const meme = ["https://i.imgur.com/fV0Wmcp.jpg",
