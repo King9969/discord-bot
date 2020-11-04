@@ -71,7 +71,7 @@
     let help = () => {
       message.channel.send("```" + "pls beg  -- to get free coins " + " \n " + " pls img  -- to get random image " + " \n " + " bet number  -- to guess no between 1 to 10(eg bet 2) " + " \n " + " pls quote  -- to show random quote " + " \n " + " pls tt  -- to show timetable " + " \n " + " pls bal  -- show yours /servers balance " + " \n " + " pls gm  -- GM " + "```")
     }
-    if (message.author.username == "꧁꧂🅳🅰🅽🆃🅴꧁꧂") {
+    if (message.author.username == "᲼᲼᲼᲼᲼᲼") {
       if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
         let rand = Math.floor(Math.random() * 10000) + 10;
         const ra = rand
