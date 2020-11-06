@@ -4,16 +4,16 @@
 
   const rohit = [7777777]
   const CharlesLeemon = [214213]
-  const pritam = [100440]
-  const yodaddy = [564554]
-  const Climax2147 = [34341]
-  const disappointment = [54544]
-  const shauny = [243252]
-  const Insaan = [24442]
-  const Kazumax = [25452]
-  const Preetam = [22122]
-  const Ganesh_Gaitonde = [22123]
-  const bantai069 = [52123]
+  const pritam = [10000440]
+  const yodaddy = [5604554]
+  const Climax2147 = [340341]
+  const disappointment = [545044]
+  const shauny = [2432502]
+  const Insaan = [244402]
+  const Kazumax = [254052]
+  const Preetam = [221202]
+  const Ganesh_Gaitonde = [202123]
+  const bantai069 = [521023]
 
 
 
@@ -71,7 +71,7 @@
     let help = () => {
       message.channel.send("```" + "pls beg  -- to get free coins " + " \n " + " pls img  -- to get random image " + " \n " + " bet number  -- to guess no between 1 to 10(eg bet 2) " + " \n " + " pls quote  -- to show random quote " + " \n " + " pls tt  -- to show timetable " + " \n " + " pls bal  -- show yours /servers balance " + " \n " + " pls gm  -- GM " + "```")
     }
-    if (message.author.username == "᲼᲼᲼᲼᲼᲼") {
+    if (message.author.username == "🅿🅰🅿🅰") {
       if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
         let rand = Math.floor(Math.random() * 10000) + 10;
         const ra = rand
@@ -83,7 +83,7 @@
       }
       else if (message.content.toLowerCase().startsWith(`${prefix}rain`)) {
         let rand = Math.floor(Math.random() * 100000) + 1500;
-        message.channel.send("__" + "**" + "KING RAINED FREE COINS" + "**" + "__")
+        message.channel.send("__" + "**" + "🅿🅰🅿🅰 RAINED FREE COINS" + "**" + "__")
         message.channel.send("CharlesLeemon " + "**" + rand.toLocaleString() + "**")
         CharlesLeemon.push(rand)
         rand = Math.floor(Math.random() * 100000) + 1500;
@@ -436,7 +436,7 @@
         help()
       }
     }
-    else if (message.author.username == "yodaddy") {
+    else if (message.author.username == "ro the prettiest") {
       if (message.content.toLowerCase().startsWith(`${prefix}beg`)) {
         let rand = Math.floor(Math.random() * 10000) + 10;
         const ra = rand
