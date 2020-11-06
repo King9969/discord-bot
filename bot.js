@@ -2,7 +2,7 @@
   const { prefix, token, } = require('./config.json')
   const client = new Discord.Client()
 
-  const rohit = [7777777]
+  const rohit = [6969696969]
   const CharlesLeemon = [214213]
   const pritam = [10000440]
   const yodaddy = [5604554]
