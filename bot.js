@@ -23,7 +23,7 @@ const getRandomAmount = (min, max) => {
 
 client.once("ready", () => {
   console.log("Ready");
-  client.user.setActivity("WITH GAAND", { type: "PLAYING" });
+  client.user.setActivity("WITH ", { type: "PLAYING" });
 });
 
 client.on('message', message => {
